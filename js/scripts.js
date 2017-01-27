@@ -46,7 +46,9 @@ $(document).ready(function() {
     var inputSauce = $("input:radio[name=sauce]:checked").val();
     var inputNumber = parseInt($("input#number").val());
     if (inputSize == ""|| inputCrust == "" || inputToppings == "" || inputSauce == "" || inputNumber == "") {alert("Please make all selection!")}
+    else if (inputNumber > 10 || inputNumber < 0) { alert("Please enter a number between 1 and 10")}
     
+
 
 
 
