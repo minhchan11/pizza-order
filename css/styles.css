@@ -4,6 +4,14 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font: bold 400 20px 'Fira Sans Extra Condensed', sans-serif;
+}
+
+h4 {
+  font: italic 200 15px 'Fira Sans Extra Condensed', sans-serif;
+}
+
 p {
   font: normal 300 20px 'Fira Sans Extra Condensed', sans-serif;
   text-align: justify;

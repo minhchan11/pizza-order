@@ -1,5 +1,6 @@
 //BUSINESS LOGIC
 var total = 0;
+var price = 0;
 function pizza(pizzaSize,crust,toppings,sauce,number) {
   this.pizzaSize = pizzaSize;
   this.crust = crust;
@@ -23,7 +24,7 @@ pizza.prototype.price= function () {
   } else { total+=5 };
 //Calculate pizza toppings price
   for (var i = 0; i < this.toppings.length; i++) {
-    if (this.toppings[i] === "normal") {
+    if (this.toppings[i] === " pepperoni"|| this.toppings[i] === " sausage"|| this.toppings[i] === " mushroom") {
       total +=2
     } else { total+=3 }; };
 //Calculate pizza sauce price
@@ -32,6 +33,7 @@ pizza.prototype.price= function () {
   } else { total+=2};
 //Calculate pizza quantity price
     total = total*this.number;
+    price += total;
 };
 //USER INTERFACE
 $(document).ready(function() {
@@ -50,13 +52,7 @@ $(document).ready(function() {
     else {
     var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
     inputPizza.price();
-    $("#total").text(total);
-    $("ul#choices").append("<li>"+ inputNumber + " " + inputSize +" pizza(s)"+"</li>")}
-
-
-
-
-
-
+    $("#total").text(price);
+    $("ul#choices").append("<li>"+ inputNumber + " " + inputSize +" pizza(s) ," + inputCrust + " crust; " + inputToppings + " toppings ," + inputSauce + " sauce "  + " with the total of $ "+ total + "</li>")}
   });
 });
