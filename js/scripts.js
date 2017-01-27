@@ -45,8 +45,12 @@ $(document).ready(function() {
     });
     var inputSauce = $("input:radio[name=sauce]:checked").val();
     var inputNumber = parseInt($("input#number").val());
+    if (inputSize == ""|| inputCrust == "" || inputToppings == "" || inputSauce == "" || inputNumber == "") {alert("Please make all selection!")}
+    
 
-    var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
-    inputPizza.price();
+
+
+
+
   });
 });

@@ -69,19 +69,19 @@
           <div class="col-md-4"><div class="radio">
             <label><input type="radio" name="sauce" value="white">White Sauce</label></div></div>
           <div class="col-md-4"><div class="radio">
-            <label><input type="radio" name="sauce" value="spice">Spicy Kick</label></div></div>
+            <label><input type="radio" name="sauce" value="spicy">Spicy Sauce</label></div></div>
         </div>
       </div>
       <div class="quantity form-group">
-        <label for="quantity">Number of orders:</label>
+        <label for="quantity">Number of orders(maximum 10):</label>
         <input type="number" class="form-control" id="number">
       </div>
       <button type="submit" class="btn btn-large btn-danger">Submit your order</button>
     </form>
 
     <div class="total">
-      <h4>Your total price is: <span id="total"></span></h4>
-      <h5>You have ordered: <ul></ul></h5>
+      <h4>Your total price is: $ <span id="total"></span></h4>
+      <h5>You have ordered: <ul id="choices"></ul></h5>
     </div>
 </div>
   </body>
