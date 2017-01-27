@@ -15,7 +15,6 @@ pizza.prototype.price= function () {
   } else if (this.pizzaSize === "medium") {
     total+=4
   } else { total+= 5};
-
 //Calculate pizza crust price
   if (this.crust === "regular") {
     total+=3
@@ -48,6 +47,6 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#number").val());
 
     var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
-
+    inputPizza.price();
   });
 });
