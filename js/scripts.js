@@ -11,6 +11,16 @@ function pizza(pizzaSize,crust,toppings,sauce,quantity) {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-  
+    var inputSize = $("input:radio[name=size]:checked").val();
+    var inputCrust = $("input:radio[name=crust]:checked").val();
+    var inputToppings = []
+    $("input:checkbox[name=topping]:checked").each(function(){
+      inputToppings.push($(this).val());
+    });
+    var inputSauce = $("input:radio[name=sauce]:checked").val();
+    var inputNumber = parseInt($("input#number").val());
+
+    var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
+    console.log(inputPizza);
   });
 });
