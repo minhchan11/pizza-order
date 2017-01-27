@@ -76,12 +76,28 @@
         <label for="quantity">Number of orders(maximum 10):</label>
         <input type="number" class="form-control" id="number">
       </div>
+      <div class="address">
+        <p>Delivery options:</p>
+        <label for="name">Your name:</label>
+        <input type="text" name="name" class="name">
+        <label for="name">Your address:</label>
+        <input type="text" name="address" class="address">
+        <label for="name">Your phone number:</label>
+        <input type="text" name="phone" class="phone">
+      </div>
       <button type="submit" class="btn btn-large btn-danger">Submit your order</button>
     </form>
 
     <div class="total">
       <h3>Your total bill is : $ <span id="total"></span></h3>
       <h4>You have ordered: <ul id="choices"></ul></h4>
+      <h5>Your delivery details:
+      <ol>
+        <li>Name : <span id="name"></span></li>
+        <li>Address : <span id="address"></span></li>
+        <li>Phone number : <span id="phone"></span></li>
+      </ol>
+    </h5>
     </div>
 </div>
   </body>
