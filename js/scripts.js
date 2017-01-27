@@ -7,3 +7,10 @@ function pizza(pizzaSize,crust,toppings,sauce,quantity) {
   this.sauce = sauce;
   this.quantity = quantity;
 }
+//USER INTERFACE
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+  
+  });
+});
