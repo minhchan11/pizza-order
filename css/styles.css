@@ -45,6 +45,10 @@ ol {
   display: none;
   font: italic 300 15px 'Fira Sans Extra Condensed', sans-serif;
 }
+#pizzaCrust {
+margin-left: 15%; 
+}
+
 #pizzaSize {
   margin-left: 8%;
 }
