@@ -15,19 +15,24 @@ pizza.prototype.price= function () {
   } else if (this.pizzaSize === "medium") {
     total+=4
   } else { total+= 5};
-};
+
 //Calculate pizza crust price
   if (this.crust === "regular") {
     total+=3
   } else if (this.crust === "wheat") {
     total+=4
   } else { total+=5 };
-
 //Calculate pizza toppings price
   for (var i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] === "normal") {
       total +=2
     } else { total+=3 }; };
+//Calculate pizza sauce price
+  if (this.sauce === "tomato") {
+    total+=1
+  } else { total+=2};
+
+};
 //USER INTERFACE
 $(document).ready(function() {
   $("form").submit(function(event) {
