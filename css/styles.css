@@ -17,6 +17,17 @@ p {
   text-align: justify;
 }
 
+ol {
+  line-height: 2;
+}
+
+button {
+  margin-top: 20px;
+}
+.order {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 .panel-heading {
   font: italic 500 20px 'Fira Sans Extra Condensed', sans-serif;
 }
@@ -26,5 +37,6 @@ p {
 }
 
 .total {
+  display: none;
   font: italic 300 15px 'Fira Sans Extra Condensed', sans-serif;
 }

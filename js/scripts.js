@@ -52,6 +52,7 @@ $(document).ready(function() {
     else {
     var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
     inputPizza.price();
+    $(".total").show();
     $("#total").text(price);
     $("ul#choices").append("<li>"+ "<a href=''>" + inputNumber + " " + inputSize +" pizza(s) ," + inputCrust + " crust; " + inputToppings + " toppings ," + inputSauce + " sauce "  + " with the total of $ "+ total + "</a>" +"</li>");
     $("#name").text($("input.name").val());
