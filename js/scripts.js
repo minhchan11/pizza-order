@@ -23,7 +23,11 @@ pizza.prototype.price= function () {
     total+=4
   } else { total+=5 };
 
-
+//Calculate pizza toppings price
+  for (var i = 0; i < this.toppings.length; i++) {
+    if (this.toppings[i] === "normal") {
+      total +=2
+    } else { total+=3 }; };
 //USER INTERFACE
 $(document).ready(function() {
   $("form").submit(function(event) {
