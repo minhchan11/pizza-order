@@ -1,7 +1,5 @@
-
-h1 {
-  font: normal 700 80px 'Fira Sans Extra Condensed', sans-serif;
-  text-align: center;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
@@ -15,14 +13,17 @@ h4 {
 p {
   font: normal 300 20px 'Fira Sans Extra Condensed', sans-serif;
   text-align: justify;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 ol {
   line-height: 2;
 }
 
-button {
-  margin-top: 20px;
+.delivery {
+  margin-top: 40px;
+  padding-right: 70%;
 }
 .order {
   margin-top: 20px;
@@ -36,7 +37,18 @@ button {
   font: 300 18px 'Fira Sans Extra Condensed', sans-serif;
 }
 
+.pizzaSize {
+  padding-left:15%
+}
+
 .total {
   display: none;
   font: italic 300 15px 'Fira Sans Extra Condensed', sans-serif;
+}
+#pizzaSize {
+  margin-left: 8%;
+}
+#title {
+  font: normal 700 80px 'Fira Sans Extra Condensed', sans-serif;
+  text-align: center;
 }

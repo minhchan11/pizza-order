@@ -2,6 +2,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,300,300i,400,500i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <script
@@ -13,16 +14,15 @@
   <title>Pizza Order</title>
 </head>
 <body>
-  <div class="jumbotron">
-    <h1>PIZZA ORDER</h1>
-  </div>
+    <h1 id="title">PIZZA ORDER</h1>
   <div class="container">
     <p>Welcome to Cheesy Pizza! Here, we have the most delicious pizza for all your party needs. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper dui metus, et tincidunt risus elementum suscipit. Proin ullamcorper augue fermentum sapien pharetra bibendum. Maecenas pellentesque placerat est, quis scelerisque justo posuere eget. Ut mattis risus sed mi euismod cursus. Sed euismod efficitur libero, a finibus enim aliquam nec. Sed euismod fermentum dapibus. Vestibulum nec sodales tellus. Maecenas eget quam at massa cursus hendrerit eu ut eros. Nam a augue nec metus aliquet tincidunt.<br><br> Are you ready to order? </p>
     <div class="order">
       <form>
         <div class="size row panel panel-success">
           <div class="panel-heading">Choose your pizza size</div>
-          <div class="panel-body">
+          <div class="row"><img id="pizzaSize" src="img/pizza.png"/></div>
+          <div class="panel-body pizzaSize">
             <div class="col-md-4"><div class="radio">
               <label><input type="radio" name="size" value="small">Small</label></div></div>
             <div class="col-md-4"><div class="radio">
@@ -73,29 +73,31 @@
           </div>
         </div>
         <div class="quantity form-group row">
-          <label for="quantity">Number of orders(maximum 10):</label>
+          <label for="quantity">Number of orders ( maximum 10 ):</label>
           <input type="number" class="form-control" id="number">
         </div>
-          <p>Delivery options:</p>
+        <div class="delivery">
+          <h3> Delivery options: </h3>
           <div class="form-group row">
             <label for="name" class="col-sm-2 col-form-label ">Name</label>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
             <input type="text" class="form-control name" placeholder="name"></div>
           </div>
           <div class="form-group row">
             <label for="address" class="col-sm-2 col-form-label ">Address</label>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
             <input type="text" class="form-control address" placeholder="address"></div>
           </div>
           <div class="form-group row">
             <label for="phone" class="col-sm-2 col-form-label ">Phone number</label>
-            <div class="col-sm-6">
+            <div class="col-sm-10">
             <input type="number" class="form-control phone" placeholder="phone number"></div>
           </div>
+        </div>
         <button type="submit" class="btn btn-large btn-danger">Submit your order</button>
       </form>
     </div>
-    
+
     <div class="total">
       <h3>Your total bill is : $ <span id="total"></span></h3>
       <h4>You have ordered: <ul id="choices"></ul></h4>
