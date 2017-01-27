@@ -1,0 +1,14 @@
+.container {
+  font: normal 300 10px 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h1 {
+  font: normal 700 80px 'Fira Sans Extra Condensed', sans-serif;
+  text-align: center;
+}
+
+.panel {
+
+}
