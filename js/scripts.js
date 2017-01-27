@@ -1,12 +1,21 @@
 //BUSINESS LOGIC
 var total = 0;
-function pizza(pizzaSize,crust,toppings,sauce,quantity) {
+function pizza(pizzaSize,crust,toppings,sauce,number) {
   this.pizzaSize = pizzaSize;
   this.crust = crust;
   this.toppings = toppings;
   this.sauce = sauce;
-  this.quantity = quantity;
+  this.number = number;
 }
+pizza.prototype.price= function () {
+  total = 0
+//Calculate pizza size price
+  if (this.pizzaSize === "small") {
+    total+=3
+  } else if (this.pizzaSize === "medium") {
+    total+=4
+  } else { total+= 5};
+};
 //USER INTERFACE
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -21,6 +30,6 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#number").val());
 
     var inputPizza = new pizza(inputSize,inputCrust,inputToppings,inputSauce,inputNumber);
-    console.log(inputPizza);
+
   });
 });
