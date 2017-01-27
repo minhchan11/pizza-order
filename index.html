@@ -17,31 +17,56 @@
     <form class="order">
       <div class="size row panel panel-success">
         <div class="panel-heading">Choose your pizza size</div>
-        <div class="col-md-4 panel-body">Small</div>
-        <div class="col-md-4 panel-body">Medium</div>
-        <div class="col-md-4 panel-body">Large</div>
+        <div class="panel-body">
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="size" value="small">Small</label></div></div>
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="size" value="medium">Medium</label></div></div>
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="size" value="large">Large</label></div></div>
+        </div>
       </div>
       <div class="crust row panel panel-warning">
         <div class="panel-heading">Choose your type of crust</div>
-        <div class="col-md-3 panel-body">Regular</div>
-        <div class="col-md-3 panel-body">Wheat</div>
-        <div class="col-md-3 panel-body">Four Cheese Stuffed</div>
-        <div class="col-md-3 panel-body">Bacon Bits</div>
+        <div class="panel-body">
+          <div class="col-md-3"><div class="radio">
+            <label><input type="radio" name="crust" value="regular">Regular</label></div></div>
+          <div class="col-md-3"><div class="radio">
+            <label><input type="radio" name="crust" value="wheat">Wheat</label></div></div>
+          <div class="col-md-3"><div class="radio">
+            <label><input type="radio" name="crust" value="cheese">Four Cheese Stuffed</label>
+          </div></div>
+          <div class="col-md-3"><div class="radio">
+            <label><input type="radio" name="crust" value="bacon">Bacon Bits</label></div></div>
+        </div>
       </div>
       <div class="topping row panel panel-info">
         <div class="panel-heading">Choose your type of toppings</div>
-        <div class="col-md-2 panel-body">Pepperoni</div>
-        <div class="col-md-2 panel-body">Cheddar</div>
-        <div class="col-md-2 panel-body">Sausage</div>
-        <div class="col-md-2 panel-body">Black olives</div>
-        <div class="col-md-2 panel-body">Mushroom</div>
-        <div class="col-md-2 panel-body">Spinach</div>
+        <div class="panel-body">
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="1">Pepperoni</label></div></div>
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="2">Extra Cheddar</label></div></div>
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="3">Sausage</label></div></div>
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="4">Black Olives</label></div></div>
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="5">Mushroom</label></div></div>
+          <div class="col-md-2"><div class="checkbox">
+            <label><input type="checkbox" name="topping" value="6">Spinach</label></div></div>
+        </div>
       </div>
       <div class="sauce row panel panel-danger">
         <div class="panel-heading">Choose your sauce</div>
-        <div class="col-md-4 panel-body">Italian Tomato</div>
-        <div class="col-md-4 panel-body">White Sauce</div>
-        <div class="col-md-4 panel-body">Spicy Kick</div>
+        <div class="panel-body">
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="sauce" value="tomato">Italian Tomato</label></div></div>
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="sauce" value="white">White Sauce</label></div></div>
+          <div class="col-md-4"><div class="radio">
+            <label><input type="radio" name="sauce" value="spice">Spicy Kick</label></div></div>
+        </div>
       </div>
       <div class="quantity form-group">
         <label for="quantity">Number of orders:</label>
