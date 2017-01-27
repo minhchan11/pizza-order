@@ -6,7 +6,7 @@ function pizza(pizzaSize,crust,toppings,sauce,number) {
   this.toppings = toppings;
   this.sauce = sauce;
   this.number = number;
-}
+};
 pizza.prototype.price= function () {
   total = 0
 //Calculate pizza size price
@@ -16,6 +16,14 @@ pizza.prototype.price= function () {
     total+=4
   } else { total+= 5};
 };
+//Calculate pizza crust price
+  if (this.crust === "regular") {
+    total+=3
+  } else if (this.crust === "wheat") {
+    total+=4
+  } else { total+=5 };
+
+
 //USER INTERFACE
 $(document).ready(function() {
   $("form").submit(function(event) {
