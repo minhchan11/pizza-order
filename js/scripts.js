@@ -31,7 +31,8 @@ pizza.prototype.price= function () {
   if (this.sauce === "tomato") {
     total+=1
   } else { total+=2};
-
+//Calculate pizza quantity price
+    total = total*this.number;
 };
 //USER INTERFACE
 $(document).ready(function() {
