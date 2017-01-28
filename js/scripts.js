@@ -54,7 +54,7 @@ pizza.prototype.price= function () {
         inputPizza.price();
         $(".total").show();
         $("#total").text(price);
-        $("ul#choices").append("<li>"+ "<a href=''>" + inputNumber + " " + inputSize +" pizza(s) ," + inputCrust + " crust; " + inputToppings + " toppings ," + inputSauce + " sauce "  + " with the total of $ "+ total + "</a>" +"</li>");
+        $("ul#choices").append("<li>"+ "<a href=''>" + inputNumber + " " + inputSize +" pizza(s) ," + inputCrust + " crust; " + inputToppings + " toppings ," + inputSauce + " sauce "  + " with the total of $ "+ total + ".99" + "</a>" +"</li>");
         $("#name").text($("input.name").val());
         $("#address").text($("input.address").val());
         $("#phone").text($("input.phone").val());
