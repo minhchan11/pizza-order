@@ -43,25 +43,11 @@ ol {
   display: none;
   font: italic 300 15px 'Fira Sans Extra Condensed', sans-serif;
 }
-#pizzaCrust {
-  width: 100%;
-  height: 50%;
-}
 
-#pizzaSize {
+#pizzaCrust, #pizzaSize, #pizzaSauce, #pizzaTop {
   margin-top: 5%;
   margin-left: 5%;
   width: 90%;
-  height: 50%;
-}
-#pizzaSauce {
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 90%;
-  height: 50%;
-}
-#pizzaTop {
-  width: 100%;
   height: 50%;
 }
 #title {
